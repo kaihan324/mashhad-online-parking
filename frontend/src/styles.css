@@ -1,0 +1,55 @@
+:root{
+  --app-bg:#f6f8fb;
+  --app-card:#ffffff;
+  --app-text:#0f172a;
+  --app-muted:#64748b;
+  --app-primary:#2563eb;
+  --app-primary-2:#1d4ed8;
+  --app-border:rgba(15,23,42,.08);
+  --app-shadow:0 10px 30px rgba(15,23,42,.08);
+  --app-radius:18px;
+}
+
+html,body{height:100%}
+body{font-family:'Vazirmatn',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--app-bg);color:var(--app-text)}
+
+a{text-decoration:none}
+
+.app-shell{min-height:100vh;display:flex;flex-direction:column}
+
+.navbar{backdrop-filter:saturate(180%) blur(10px)}
+
+.card{border:1px solid var(--app-border);border-radius:var(--app-radius);box-shadow:var(--app-shadow)}
+
+.btn-primary{background:var(--app-primary);border-color:var(--app-primary)}
+.btn-primary:hover{background:var(--app-primary-2);border-color:var(--app-primary-2)}
+
+.badge-soft{background:rgba(37,99,235,.1);color:var(--app-primary);border:1px solid rgba(37,99,235,.15)}
+
+.hero{
+  background:radial-gradient(1000px 300px at 80% 0%, rgba(37,99,235,.22), transparent 60%),
+  radial-gradient(800px 280px at 10% 10%, rgba(99,102,241,.18), transparent 55%),
+  linear-gradient(180deg, #ffffff, rgba(255,255,255,.85));
+  border:1px solid var(--app-border);
+  border-radius:calc(var(--app-radius) + 6px);
+  box-shadow:var(--app-shadow);
+}
+
+.form-control, .form-select{
+  border-radius:14px;
+  border:1px solid var(--app-border);
+}
+
+.input-group-text{border-radius:14px;border:1px solid var(--app-border);background:#ffffff}
+
+.table{--bs-table-bg:transparent}
+
+.footer{color:var(--app-muted)}
+
+.footer-main{background:#fff;border-top:1px solid var(--app-border)}
+.footer-link{color:var(--app-muted)}
+.footer-link:hover{color:var(--app-primary)}
+
+.parking-card-img{height:170px;object-fit:cover;border-top-left-radius:var(--app-radius);border-top-right-radius:var(--app-radius)}
+
+.rating-badge{background:rgba(15,23,42,.06);border:1px solid var(--app-border);border-radius:999px;padding:.35rem .6rem;font-weight:600;color:var(--app-text)}
